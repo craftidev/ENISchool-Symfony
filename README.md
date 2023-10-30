@@ -2,3 +2,4 @@
 - Use Controller/Route
 - Use Twig
 - Filter/format
+- Path managed by symfony
