@@ -16,6 +16,7 @@ body {
 .menu-a {
     text-decoration: none;
     color: lightblue;
+    
     &:hover {
         color: white;
         font-weight: bold;
