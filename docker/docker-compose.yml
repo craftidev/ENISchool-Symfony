@@ -1,5 +1,6 @@
 # Copyright VMware, Inc.
 # SPDX-License-Identifier: APACHE-2.0
+# Module Symphony on vscode: https://github.com/TheNouillet/symfony-vscode/issues/49
 
 version: '3.8'
 
