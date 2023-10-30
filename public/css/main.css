@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'RubikMonoOne'; /* Name your font */
+    src: url('../fonts/RubikMonoOne-Regular.ttf') format('truetype'), /* Specify the font file(s) */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+
+    background-color: #111d45aa;
+    font-family: 'RubikMonoOne';
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+    &:hover {
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1rem;
+        transition: letter-spacing 1s;
+    }
+}
+
+.logo {
+    max-width: 15rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.footnote{
+    position: fixed;
+    bottom: 0;
+
+    font-size: 0.7rem;
+    font-style: italic;
+}
