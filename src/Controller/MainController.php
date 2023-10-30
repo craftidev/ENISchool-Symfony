@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', 'main_home')]
     public function home()
     {
         return $this -> render('main/home.html.twig');
