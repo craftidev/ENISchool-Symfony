@@ -12,6 +12,8 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=bn_myapp
       - MARIADB_DATABASE=bitnami_myapp
+    volumes:
+      - mariadb_volume:/var/lib/mysql
   myapp:
     image: docker.io/bitnami/symfony:6.3
     ports:
@@ -29,3 +31,6 @@ services:
       - '../:/app/'
     depends_on:
       - mariadb
+
+volumes:
+  mariadb_volume:
