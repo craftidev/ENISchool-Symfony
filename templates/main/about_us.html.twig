@@ -2,12 +2,36 @@
 
 {% block body %}
 	<h1>ABOUT US PAGE</h1>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Ullam expedita facilis laboriosam, inventore quasi, earum,
-    quibusdam molestias maxime pariatur ut voluptatum placeat velit perspiciatis
-    veritatis illum nisi ipsam eos id.
+
+	<article>
+		<h2>Our Team</h2>
+		<div class="contributors">
+			{% for contributor in contributors %}
+				<div class="contributor">
+					<img src="{{ contributor.picture }}"/>
+					<br/>
+					<h3>
+						{{ contributor.firstname }} 
+                        {% if contributor.firstname == 'Fabien' %}
+							&#x2665;
+						{% endif %}
+						{{ contributor.lastname }}
+					</h3>
+					{{ contributor.dateOfBirth | date('d-m-Y') }}
+
+					<p>Role:
+						{{ contributor.creatorOf }}</p>
+
+					<p>{{ contributor.description }}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</article>
+
+
 {% endblock %}
 
 {% block title %}
-	{{parent()}} | Home
+	{{parent()}}
+	| Home
 {% endblock %}
