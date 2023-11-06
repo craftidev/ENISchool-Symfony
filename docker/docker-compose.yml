@@ -7,13 +7,15 @@ version: '3.8'
 services:
   mariadb:
     image: docker.io/bitnami/mariadb:11.1
+    ports:
+      - '3306:3306'
     environment:
       # ALLOW_EMPTY_PASSWORD is recommended only for development.
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=bn_myapp
       - MARIADB_DATABASE=bitnami_myapp
     volumes:
-      - mariadb_volume:/var/lib/mysql
+      - mariadb_volume:/bitnami/mariadb/data
   myapp:
     image: docker.io/bitnami/symfony:6.3
     ports:
