@@ -15,7 +15,7 @@ class WishController extends AbstractController
         return $this->render('main/wish/list.html.twig');
     }
 
-    #[Route('/detail', 'detail')]
+    #[Route('/detail/{id}', 'detail')]
     public function detail($id): Response
     {
         return $this->render('main/wish/detail.html.twig', [
