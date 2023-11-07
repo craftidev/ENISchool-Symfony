@@ -28,4 +28,10 @@ class WishController extends AbstractController
             'wish' => $wish
         ]);
     }
+
+    #[Route('/create', 'create')]
+    public function create(): Response
+    {
+        return $this->render('main/wish/create.html.twig');
+    }
 }
