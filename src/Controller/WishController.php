@@ -41,6 +41,7 @@ class WishController extends AbstractController
     {
         $wish = new Wish();
         $wish -> setDateCreated(new \DateTime());
+        $wish -> setIsPublished(True);
         $wishForm = $this -> createForm(WishType::class, $wish);
         $wishForm -> handleRequest($request);
 

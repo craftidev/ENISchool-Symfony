@@ -84,10 +84,11 @@ textarea {
 }
 
 .flash {
-    padding: 5rem;
+    padding: 3rem;
     font-weight: bold;
     font-size: 1.4rem;
     margin: 1rem, 0;
+    margin-top: 2rem;
     border-radius: 1rem;
 }
 
