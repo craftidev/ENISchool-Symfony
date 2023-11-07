@@ -1,13 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>Detail for ID:
-	{{ id }}</h1>
+	<h1>Detail for ID:
+		{{ wish.id }}</h1>
 
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-		Ullam expedita facilis laboriosam, inventore quasi, earum,
-		quibusdam molestias maxime pariatur ut voluptatum placeat velit perspiciatis
-		veritatis illum nisi ipsam eos id.
+	<p>Title:
+		{{ wish.title }}</p>
+	<p>Author:
+		{{ wish.author }}</p>
+	<p>Is published:
+		{{ wish.isPublished }}</p>
+	<p>Created:
+		{{ wish.dateCreated }}</p>
+	<p>Description:</p>
+	<p>{{ wish.dateCreated }}</p>
 {% endblock %}
 
 {% block title %}

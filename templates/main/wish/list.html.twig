@@ -2,10 +2,15 @@
 
 {% block body %}
 	<h1>LIST PAGE</h1>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-	Ullam expedita facilis laboriosam, inventore quasi, earum,
-	quibusdam molestias maxime pariatur ut voluptatum placeat velit perspiciatis
-	veritatis illum nisi ipsam eos id.
+	<section class="wish-list">
+		{% for wish in wishes %}
+			<article class="wish-list-article">
+				<a href="{{ path('wish_detail', {'id': wish.id }) }}" title="View detail">
+					<p>{{ wish.title }}</p>
+				</a>
+			</article>
+		{% endfor %}
+	</section>
 {% endblock %}
 
 {% block title %}
