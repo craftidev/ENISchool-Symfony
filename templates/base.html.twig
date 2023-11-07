@@ -18,6 +18,16 @@
             {% endblock %}
         </header>
 
+        {# flash #}
+        {% for label, messages in app.flashes %}
+            {%  for message in messages %}
+                <div class="flash flash-{{ label }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        {# endflash #}
+
         <menu>
             <ul>
                 <li><a href="/" class="menu-a">Home</a></li>

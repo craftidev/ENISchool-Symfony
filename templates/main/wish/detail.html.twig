@@ -9,11 +9,11 @@
 	<p>Author:
 		{{ wish.author }}</p>
 	<p>Is published:
-		{{ wish.isPublished }}</p>
+		{{ wish.isPublished ? 'Yes' : 'No' }}</p>
 	<p>Created:
-		{{ wish.dateCreated }}</p>
+		{{ wish.dateCreated | date('d-m-Y') }}</p>
 	<p>Description:</p>
-	<p>{{ wish.dateCreated }}</p>
+	<p>{{ wish.description }}</p>
 {% endblock %}
 
 {% block title %}
