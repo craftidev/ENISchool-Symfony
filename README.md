@@ -3,3 +3,5 @@
 - Use Twig
 - Filter/format
 - Path managed by symfony
+- Auto generated Entities
+- Form from entity
