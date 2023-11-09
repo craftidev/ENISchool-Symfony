@@ -5,3 +5,5 @@
 - Path managed by symfony
 - Auto generated Entities
 - Form from entity
+- Relation entre entities
+- Auth
