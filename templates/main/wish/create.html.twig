@@ -3,7 +3,14 @@
 {% block body %}
     {{ form_start(wishForm) }}
     {{ form_widget(wishForm) }}
+
+    <label for="{{ field_name(wishForm.author) }}">Author</label>
+    <input
+    name="{{ field_name(wishForm.author) }}"
+    value="{{ app.user.name }}"
+    >
     <button>Create</button>
+
     {{ form_end(wishForm) }}
 {% endblock %}
 
